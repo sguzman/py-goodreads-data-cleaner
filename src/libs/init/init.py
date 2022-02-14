@@ -1,15 +1,14 @@
 import functools
-from typing import Dict
+from typing import List
+from typing import Tuple
 
 from . import __log as log
 from . import __exit as exit
 from . import __greet as greet
-from . import __json as json
 
 
 @functools.cache
-def exec() -> Dict:
+def exec() -> None:
     log.exec()
     greet.exec()
     exit.exec()
-    return json.exec()

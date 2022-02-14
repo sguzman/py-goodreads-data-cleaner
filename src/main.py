@@ -1,9 +1,10 @@
 import libs
-import libs.func
+import libs.util
+import libs.util.func
 
 
 def main() -> None:
-    print(libs.func.exec())
+    libs.util.func.exec()
 
 
 if __name__ == '__main__':

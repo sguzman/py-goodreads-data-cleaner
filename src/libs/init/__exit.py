@@ -3,4 +3,4 @@ import logging
 
 
 def exec() -> None:
-    atexit.register(lambda: logging.debug('hi'))
+    atexit.register(lambda: logging.debug('bye'))
