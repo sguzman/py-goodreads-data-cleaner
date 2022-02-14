@@ -1,8 +1,11 @@
 import csv
 import functools
 import logging
+
 from typing import List
 from typing import Tuple
+
+from . import __column_names as cols
 
 
 __csv_path: str = './.env/data/goodreads.csv'
