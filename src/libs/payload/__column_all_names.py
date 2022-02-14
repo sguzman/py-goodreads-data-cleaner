@@ -6,9 +6,9 @@ from typing import List
 
 @functools.cache
 def exec() -> List[str]:
-    names: List[str] = []
+    names: List[str] = [""] * 31
 
-    names[0] == 'Book Id'
+    names[0] = 'Book Id'
     names[1] = 'Title'
     names[2] = 'Author'
     names[3] = 'Author l-f'
