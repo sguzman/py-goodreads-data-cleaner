@@ -7,6 +7,8 @@ import libs
 import libs.util
 import libs.util.index_with_tuple
 
+from . import __clean_isbn as isbn
+
 MyData = Tuple[
     # names[0] == 'Book Id'
     str,
@@ -52,7 +54,7 @@ def exec(items: Tuple) -> MyData:
         str(raw_data[0]),
         str(raw_data[1]),
         str(raw_data[2]),
-        str(raw_data[3]),
+        isbn.exec(str(raw_data[3])),
         str(raw_data[4]),
         str(raw_data[5]),
         str(raw_data[6]),
