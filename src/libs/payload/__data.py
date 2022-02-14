@@ -25,4 +25,4 @@ def exec() -> List[Tuple]:
 
     logging.debug('Got %d rows', len(data))
 
-    return data
+    return data[1:]
