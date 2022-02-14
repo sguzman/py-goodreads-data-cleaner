@@ -29,4 +29,4 @@ def exec() -> None:
     logging.debug("Sorted order of books")
     for idx, book in enumerate(rd):
         logging.debug("[%d] %s", idx, book)
-        print(*book, sep=",")
+        print(idx, *book, sep=",")
